@@ -21,7 +21,7 @@ target_include_directories(imgui PUBLIC
     ${IMGUI_BACKENDS_DIR}
     ${Vulkan_INCLUDE_DIR}
     ${GLFW_INCLUDE_DIR}
-    ${SDL2_INCLUDE_DIR}
+    ${SDL2_INCLUDE_DIRS}
     )
 
 set_target_properties(imgui PROPERTIES LINKER_LANGUAGE CXX)
