@@ -5,11 +5,11 @@ file(GLOB IMGUI_HEADERS ${IMGUI_INCLUDE_DIR}/*.h)
 set(IMGUI_BACKENDS_DIR ${IMGUI_INCLUDE_DIR}/backends)
 set(IMGUI_BACKEND_SOURCES
     ${IMGUI_BACKENDS_DIR}/imgui_impl_glfw.cpp
-    ${IMGUI_BACKENDS_DIR}/imgui_impl_sdl.cpp
+    ${IMGUI_BACKENDS_DIR}/imgui_impl_sdl2.cpp
     ${IMGUI_BACKENDS_DIR}/imgui_impl_vulkan.cpp)
 set(IMGUI_BACKEND_HEADERS
     ${IMGUI_BACKENDS_DIR}/imgui_impl_glfw.h
-    ${IMGUI_BACKENDS_DIR}/imgui_impl_sdl.h
+    ${IMGUI_BACKENDS_DIR}/imgui_impl_sdl2.h
     ${IMGUI_BACKENDS_DIR}/imgui_impl_vulkan.h)
 
 add_library(imgui STATIC

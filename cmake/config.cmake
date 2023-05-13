@@ -36,7 +36,7 @@ macro(make_executable)
     add_executable(${PROJECT} ${HEADERS} ${SOURCES})
     make_project_options_()
 
-    set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/bundle/${PROJECT}")
+    set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/bundle")
     install(
         TARGETS ${PROJECT}
         DESTINATION ${CMAKE_INSTALL_PREFIX})
