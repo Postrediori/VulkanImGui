@@ -25,7 +25,7 @@ or other sources and copy the file into `<CMake shared dir>/Modules`.
 
 The following instructions apply to:
 
-* Ubuntu 20.04, 18.04, 16.04
+* Ubuntu 24.04, 22.04, 20.04
 
 ```
 sudo apt-get install \
