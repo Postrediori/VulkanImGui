@@ -2,6 +2,8 @@ if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug CACHE STRING "Choose build type: Debug  Release" FORCE)
 endif ()
 
+set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/bundle")
+
 macro(make_project_)
     if (NOT DEFINED PROJECT)
         get_filename_component(PROJECT ${CMAKE_CURRENT_SOURCE_DIR} NAME)
@@ -36,7 +38,6 @@ macro(make_executable)
     add_executable(${PROJECT} ${HEADERS} ${SOURCES})
     make_project_options_()
 
-    set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/bundle")
     install(
         TARGETS ${PROJECT}
         DESTINATION ${CMAKE_INSTALL_PREFIX})
