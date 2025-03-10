@@ -43,7 +43,7 @@ The following instructions apply to:
 sudo dnf install \
     gcc gcc-c++ make \
     cmake \
-    mesa-vulkan-devel \
+    vulkan-loader-devel \
     libXrandr-devel \
     libXinerama-devel \
     libXcursor-devel \
